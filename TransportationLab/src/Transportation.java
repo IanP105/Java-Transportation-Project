@@ -79,8 +79,10 @@ public class Transportation {
 
     @Override
     public String toString(){
-        String str = "";
-        return str;
+        String str = "%15d%15s%15d%15f%15b%15d%s";
+        return String.format(str, price, name, numPassengers, avgSpeed,
+                isRental, rentalPeriodDays, travelInstructions);
+
     }
 }
 
