@@ -5,7 +5,7 @@ public class Helicopter extends AirTransportation {
     public Helicopter(){
         return;
     }
-    public Helicopter(int price, String name, int numPassengers, float avgSpeed,
+    public Helicopter(float price, String name, int numPassengers, float avgSpeed,
                       boolean isRental, int rentalPeriodDays, String travelInstructions,
                       float maxHeight, float ascentRate, float descentRate, int numBlades, String model){
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions,
@@ -27,5 +27,12 @@ public class Helicopter extends AirTransportation {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    @Override
+    public String toString(){
+        String transStr = super.toString();
+        transStr += String.format("%nNum Blades: %-15d Model: %-15s", this.numBlades, this.model);
+        return transStr;
     }
 }

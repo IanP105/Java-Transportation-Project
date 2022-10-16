@@ -6,7 +6,7 @@ public class Plane extends AirTransportation{
     public Plane(){
         return;
     }
-    public Plane(int price, String name, int numPassengers, float avgSpeed, boolean isRental,
+    public Plane(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
                  int rentalPeriodDays, String travelInstructions, float maxHeight, float ascentRate,
                  float descentRate, float wingSpan, int numTurbines, String model){
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, maxHeight,
@@ -37,5 +37,12 @@ public class Plane extends AirTransportation{
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    @Override
+    public String toString(){
+        String transStr = super.toString();
+        transStr += String.format("%nWing Span: %-15.2f Turbine Count: %-15d Mode: %-15s", this.wingSpan, this.numTurbines, this.model);
+        return transStr;
     }
 }

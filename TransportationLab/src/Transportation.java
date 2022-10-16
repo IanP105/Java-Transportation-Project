@@ -1,5 +1,5 @@
 public class Transportation {
-    private int price;
+    private float price;
     private String name;
     private int numPassengers;
     private float avgSpeed;
@@ -10,7 +10,7 @@ public class Transportation {
     public Transportation(){
         return;
     }
-    public Transportation(int price, String name, int numPassengers, float avgSpeed, boolean isRental,
+    public Transportation(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
                           int rentalPeriodDays, String travelInstructions){
         this.price = price;
         this.name = name;
@@ -21,7 +21,7 @@ public class Transportation {
         this.travelInstructions = travelInstructions;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
@@ -53,11 +53,11 @@ public class Transportation {
         this.avgSpeed = avgSpeed;
     }
 
-    public boolean isRental() {
+    public boolean getIsRental() {
         return isRental;
     }
 
-    public void setRental(boolean rental) {
+    public void setIsRental(boolean rental) {
         isRental = rental;
     }
 
@@ -79,8 +79,8 @@ public class Transportation {
 
     @Override
     public String toString(){
-        String str = "%15d%15s%15d%15f%15b%15d%s";
-        return String.format(str, price, name, numPassengers, avgSpeed,
+        String str = "Name: %-15s Price: $%-15.2f Max Paseengers: %-15d%nAvg. Speed: %-15.2f Is Rental: %-15b Rental Period: %-15d%nTravel Instructions: %-15s";
+        return String.format(str, name, price, numPassengers, avgSpeed,
                 isRental, rentalPeriodDays, travelInstructions);
 
     }

@@ -8,7 +8,7 @@ public class AirTransportation extends Transportation {
         return;
     }
 
-    public AirTransportation(int price, String name, int numPassengers, float avgSpeed, boolean isRental,
+    public AirTransportation(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
                              int rentalPeriodDays, String travelInstructions, float maxHeight, float ascentRate,
                              float descentRate){
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions);
@@ -44,7 +44,7 @@ public class AirTransportation extends Transportation {
     @Override
     public String toString(){
         String transStr = super.toString();
-        transStr += String.format("%n%15.2f%15.2f%15.2f", maxHeight,
+        transStr += String.format("%nMax Height: %-15.2f Ascent Rate: %-15.2f Descent Rate: %-15.2f", maxHeight,
                 ascentRate, descentRate);
         return transStr;
     }

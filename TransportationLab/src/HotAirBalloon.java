@@ -5,7 +5,7 @@ public class HotAirBalloon extends AirTransportation{
     public HotAirBalloon(){
         return;
     }
-    public HotAirBalloon(int price, String name, int numPassengers, float avgSpeed, boolean isRental,
+    public HotAirBalloon(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
                          int rentalPeriodDays, String travelInstructions, float maxHeight, float ascentRate,
                          float descentRate, boolean isWickerBasket, float balloonSize){
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, maxHeight,
@@ -28,5 +28,12 @@ public class HotAirBalloon extends AirTransportation{
 
     public void setBalloonSize(float balloonSize) {
         this.balloonSize = balloonSize;
+    }
+
+    @Override
+    public String toString(){
+        String transStr = super.toString();
+        transStr += String.format("%nWicker Basket: %-15b Balloon Size: %-15.2f", this.isWickerBasket, this.balloonSize);
+        return transStr;
     }
 }
