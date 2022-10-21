@@ -21,16 +21,23 @@ public class WTCTreadwellPenaWalsh {
         2000, 100, 25, 100000, "Helium?");
         Helicopter helicopter = new Helicopter(250, "Helicopter", 6, 149.8f, false, 0, "BYOP - Bring Your Own Parachute",
                 5000.8f, 100, 80, 4, "XCopter2000 Xtreme Edition");
+
+        //POLYMORPHISM
+        //This array of super class references holds subclass objects
         AirTransportation[] airTrans = {plane, balloon, dirigible, helicopter};
 
         /*
         this is where land transportation will go
          */
+        //POLYMORPHISM
+        //This array of super class references holds subclass objects
         //LandTransportation[] landTrans = {};
 
         /*
         this is where water transportation will go
          */
+        //POLYMORPHISM
+        //This array of super class references holds subclass objects
         //WaterTransportation[] waterTrans = {};
 
         //continue prompting user until they find and confirm a transportation type
@@ -107,6 +114,7 @@ public class WTCTreadwellPenaWalsh {
 
 
         System.out.printf("%-15s%-15s%-15s%-15s%-15s%n", "Name", "Cost", "Rental", "Avg. Speed", "Passenger Count");
+        //POLYMORPHISM
         for(Transportation option : transOptions){
             System.out.printf("%-15s%-15.2f%-15b%-15.2f%-15d%n", option.getName(), option.getPrice(), option.getIsRental(),
                     option.getAvgSpeed(), option.getNumPassengers());
@@ -131,6 +139,7 @@ public class WTCTreadwellPenaWalsh {
             optionName = input.nextLine();
 
             validOption = false;
+            //POLYMORPHISM
             for(Transportation availableOption : transOptions){
                 if (optionName.equals(availableOption.getName())){
                     validOption = true;
