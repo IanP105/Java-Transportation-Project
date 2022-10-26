@@ -26,9 +26,6 @@ public class WTCTreadwellPenaWalsh {
         //This array of super class references holds subclass objects
         AirTransportation[] airTrans = {plane, balloon, dirigible, helicopter};
 
-        /*
-        this is where land transportation will go
-         */
         //POLYMORPHISM
         //This array of super class references holds subclass objects
         //LandTransportation[] landTrans = {};
