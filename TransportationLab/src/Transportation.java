@@ -79,7 +79,7 @@ public class Transportation {
 
     @Override
     public String toString(){
-        String str = "Name: %-15s Price: $%-15.2f Max Paseengers: %-15d%nAvg. Speed: %-15.2f Is Rental: %-15b Rental Period: %-15d%nTravel Instructions: %-15s";
+        String str = "Name: %-15s Price: $%-15.2f Max Passengers: %-15d%nAvg. Speed: %-15.2f Is Rental: %-15b Rental Period: %-15d%nTravel Instructions: %-15s";
         return String.format(str, name, price, numPassengers, avgSpeed,
                 isRental, rentalPeriodDays, travelInstructions);
 
