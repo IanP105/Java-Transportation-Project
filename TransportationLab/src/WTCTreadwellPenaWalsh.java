@@ -51,7 +51,7 @@ public class WTCTreadwellPenaWalsh {
                 System.out.println(selectedOption);
             }
             else if (transCategory.equals("land")) {
-                //availableTransMethods = DisplayTransInfo(landTrans);
+                //DisplayTransInfo(landTrans);
                 //selectedOption = GetTransOption(landTrans);
                 //System.out.println(selectedOption);
             }
