@@ -5,9 +5,9 @@ public class Boat extends WaterTransportation{
 
     public Boat () {};
     public Boat (float price, String name, int numPassengers, float avgSpeed, boolean isRental,
-                int rentalPeriodDays, String travelInstructions, Integer crewmatesNeeded,
-                 Integer totalWeight, Float distanceFromCoast, Integer numberOfSails,
-                Integer marketPrice, String model) {
+                int rentalPeriodDays, String travelInstructions, int crewmatesNeeded,
+                 int totalWeight, float distanceFromCoast, int numberOfSails,
+                int marketPrice, String model) {
         super (price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, crewmatesNeeded, totalWeight, distanceFromCoast);
         this.numberOfSails = numberOfSails;
         this.marketPrice = marketPrice;

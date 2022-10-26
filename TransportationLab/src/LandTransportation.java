@@ -13,7 +13,7 @@ public class LandTransportation extends Transportation {
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions);
         this.departureLocation = departureLocation;
         this.arrivalLocation = arrivalLocation;
-        this.accomodation = accommodation;
+        this.accommodation = accommodation;
     }
 
     public String getDepartureLocation() {
@@ -43,7 +43,7 @@ public class LandTransportation extends Transportation {
     @Override
     public String toString() {
         String transStr = super.toString();
-        transStr += String.format("%nDepartureLocation: %-15.2f ArrivalLocation: %-15.2f Accomodation: %-15.2f", departureLocation,
+        transStr += String.format("%nDepartureLocation: %-15s ArrivalLocation: %-15s Accomodation: %-15s", departureLocation,
                 arrivalLocation, accommodation);
         return transStr;
     }

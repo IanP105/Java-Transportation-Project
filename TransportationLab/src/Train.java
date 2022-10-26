@@ -1,14 +1,14 @@
-public class Bus extends LandTransportation{
+public class Train extends LandTransportation{
     private String travelLuxury;
     private boolean layover;
     private String layoverLocation;
 
-    public Bus(){
+    public Train(){
         return;
     }
 
-    public Bus(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
-                 int rentalPeriodDays, String travelInstructions, String departureLocation, String arrivalLocation, String accommodation, String travelLuxury, boolean layover, String layoverLocation){
+    public Train(float price, String name, int numPassengers, float avgSpeed, boolean isRental,
+    int rentalPeriodDays, String travelInstructions, String departureLocation, String arrivalLocation, String accommodation, String travelLuxury, boolean layover, String layoverLocation){
         super(price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, departureLocation,
                 arrivalLocation, accommodation);
         this.travelLuxury = travelLuxury;
@@ -41,9 +41,8 @@ public class Bus extends LandTransportation{
     @Override
     public String toString(){
         String transStr = super.toString();
-        transStr += String.format("%nTravel Luxury: %-15.2f Layover: %-15.2f Layover Location: %-15.2f", travelLuxury,
+        transStr += String.format("%nTravel Luxury: %-15s Layover: %-15s Layover Location: %-15s", travelLuxury,
                 layover, layoverLocation);
         return transStr;
     }
-}
 }

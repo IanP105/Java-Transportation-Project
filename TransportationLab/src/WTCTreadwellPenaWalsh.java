@@ -26,16 +26,28 @@ public class WTCTreadwellPenaWalsh {
         //This array of super class references holds subclass objects
         AirTransportation[] airTrans = {plane, balloon, dirigible, helicopter};
 
-        //POLYMORPHISM
-        //This array of super class references holds subclass objects
-        //LandTransportation[] landTrans = {};
+        Bike bike = new Bike(1.99f, "Bike", 1, 1.5f, true, 1, "Requires pedalling", "Where you leave from", "Where you're going",
+                "N/A", "Bike rack", "Other bike rack", 1);
+        Automobile automobile = new Automobile(19999.95f, "Automobile", 4, 60.0f, false, 0, "Press gas to drive, breaks not needed",
+                "car dealership", "your home", "Assisted steering", "Lot 4", "N/A", 4);
+        Bus bus = new Bus(.25f, "Bus", 100, 45, false, 0, "Please be nice to your driver", "Bus station 1", "Bus Station 2", "Handle bars",
+                "Lunch included w/ luxury", false, "N/A");
+        Train train = new Train(44.44f, "Train", 200, 234.56f, false, 0, "Don't forget your luggage!", "ILM train station",
+                "RDU Train station", "Guide dogs available", "Heated seats", true, "Conneticut");
 
-        /*
-        this is where water transportation will go
-         */
         //POLYMORPHISM
         //This array of super class references holds subclass objects
-        //WaterTransportation[] waterTrans = {};
+        LandTransportation[] landTrans = {bike, automobile, bus, train};
+
+        Boat boat = new Boat(1000000, "Boat", 4, 1, false, 0, "Somehow the wind will move the boat?", 8,
+                1, 123.45f, 6, 1000001, "The nice kind");
+        Ship ship = new Ship(14.99f, "Ship", 400, 123, false, 0, "Find the ship in the dock and get on it",
+                23, 21314, 10, 14, 1000, 423);
+        Submarine submarine = new Submarine(420.00f, "Submarine", 123, 11, true, 7, "This one goes under water :O",
+                17, 1231231, 1.111111f, 800, 8, "industrial");
+        //POLYMORPHISM
+        //This array of super class references holds subclass objects
+        WaterTransportation[] waterTrans = {boat, ship, submarine};
 
         //continue prompting user until they find and confirm a transportation type
         boolean confirmed;
@@ -48,14 +60,14 @@ public class WTCTreadwellPenaWalsh {
                 System.out.println(selectedOption);
             }
             else if (transCategory.equals("land")) {
-                //DisplayTransInfo(landTrans);
-                //selectedOption = GetTransOption(landTrans);
-                //System.out.println(selectedOption);
+                DisplayTransInfo(landTrans);
+                selectedOption = GetTransOption(landTrans);
+                System.out.println(selectedOption);
             }
             else{
-                //availableTransMethods = DisplayTransInfo(waterTrans);
-                //selectedOption = GetTransOption(waterTrans);
-                //System.out.println(selectedOption);
+                DisplayTransInfo(waterTrans);
+                selectedOption = GetTransOption(waterTrans);
+                System.out.println(selectedOption);
             }
 
             confirmed = VerifyDecision(selectedOption);

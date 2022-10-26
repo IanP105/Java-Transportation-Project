@@ -5,8 +5,8 @@ public class Submarine extends WaterTransportation{
 
     public Submarine () {};
     public Submarine (float price, String name, int numPassengers, float avgSpeed, boolean isRental,
-                 int rentalPeriodDays, String travelInstructions, Integer crewmatesNeeded,
-                 Integer totalWeight, Float distanceFromCoast, float divingDepth,
+                 int rentalPeriodDays, String travelInstructions, int crewmatesNeeded,
+                 int totalWeight, float distanceFromCoast, float divingDepth,
                  float maxPSI, String type) {
         super (price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, crewmatesNeeded, totalWeight, distanceFromCoast);
         this.divingDepth = divingDepth;

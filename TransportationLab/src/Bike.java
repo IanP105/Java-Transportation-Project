@@ -40,7 +40,7 @@ public class Bike extends LandTransportation {
     @Override
     public String toString(){
         String transStr = super.toString();
-        transStr += String.format("%nPickup LOcation: %-15.2f Dropoff Location: %-15.2f Seats: %-15.2f",pickupLocation,
+        transStr += String.format("%nPickup LOcation: %-15s Dropoff Location: %-15s Seats: %-15s",pickupLocation,
                 dropoffLocation, seats);
         return transStr;
     }

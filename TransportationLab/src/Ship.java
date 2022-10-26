@@ -5,9 +5,9 @@ public class Ship extends WaterTransportation{
 
     public Ship () {};
     public Ship (float price, String name, int numPassengers, float avgSpeed, boolean isRental,
-                 int rentalPeriodDays, String travelInstructions, Integer crewmatesNeeded,
-                 Integer totalWeight, Float distanceFromCoast, Integer numberOfEngines,
-                 Integer totalHorsepower, float maxCapacity) {
+                 int rentalPeriodDays, String travelInstructions, int crewmatesNeeded,
+                 int totalWeight, float distanceFromCoast, int numberOfEngines,
+                 int totalHorsepower, float maxCapacity) {
         super (price, name, numPassengers, avgSpeed, isRental, rentalPeriodDays, travelInstructions, crewmatesNeeded, totalWeight, distanceFromCoast);
         this.numberOfEngines = numberOfEngines;
         this.totalHorsepower = totalHorsepower;
