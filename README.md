@@ -25,3 +25,8 @@ The information contained within the diagrams was then transformed directly into
 * Ask the user how many passengers need to travel using that mode of transportation.
 * Display the total cost.
 * Display travel instructions (what time their flight leaves, where they need to go to pick up a bike rental, etc.)
+
+## Authors
+* [Ian Peña](https://github.com/IanP105)
+* [Brennon Treadwell](https://github.com/BTreadwell)
+* [Alex Walsh](https://github.com/alexwalsh136)
