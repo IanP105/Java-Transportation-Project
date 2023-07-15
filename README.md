@@ -1,6 +1,6 @@
 # CSC-331-Transportation-Project
 
-## Introduction
+## Overview
 This project demonstrates a few of the fundamental concepts in the Java programming language, such as polymorphism, inheritance, instance variables, constructors, accessors, and mutators.  A driver file is included, which makes use of the classes in this repo.
 
 ## The Diagrams
